@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Travel</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-image: url('images/header-background.jpg');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 80px;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 14px 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        section h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .destination-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 20px;
+            max-width: 300px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .destination-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .destination-card h3 {
+            color: #333;
+            margin: 15px;
+        }
+
+        .destination-card p {
+            color: #777;
+            margin: 0 15px 15px;
+        }
+
+        #about {
+            background-color: #ffcc00;
+            color: #333;
+        }
+
+        #contact {
+            background-image: url('images/contact-background.jpg');
+            background-size: cover;
+            color: #fff;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        form label, form textarea, form input {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        form textarea {
+            height: 100px;
+        }
+
+        form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Colorful Travel</h1>
+    <p>Your Journey Awaits</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Colorful Travel</h2>
+    <p>Explore vibrant destinations and create unforgettable memories.</p>
+</section>
+
+<section id="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="destination-card">
+        <img src="images/mountain.jpg" alt="Mountain Destination">
+        <h3>Mountain Retreat</h3>
+        <p>Explore the serene beauty of majestic mountains.</p>
+    </div>
+    <div class="destination-card">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Fmountain.html&psig=AOvVaw1Lleh29rAKDeyxJkTk7Mnn&ust=1702228443291000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCKDjrJ_tgoMDFQAAAAAdAAAAABAE" alt="City Exploration">
+        <h3>City Lights</h3>
+        <p>Experience the vibrant culture of bustling cities.</p>
+    </div>
+    <div class="destination-card">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Fmountain.html&psig=AOvVaw1Lleh29rAKDeyxJkTk7Mnn&ust=1702228443291000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCKDjrJ_tgoMDFQAAAAAdAAAAABAE" alt="Forest Adventure">
+        <h3>Enchanted Forest</h3>
+        <p>Get lost in the beauty of lush green forests.</p>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Colorful Travel is dedicated to providing unique and exciting travel experiences. Our team of experts is passionate about making your journey extraordinary.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Reach out to us for inquiries, bookings, or any assistance.</p>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2023 Colorful Travel. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
